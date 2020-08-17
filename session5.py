@@ -80,10 +80,20 @@ def temp_converter(val, temp_given_in):
 
 def speed_converter(speed, dist, time):
 
-    dist_table = {"km": 1, 'm': 1000, "ft": 3280.84,
-                  "yrd": 1093.61, "mile": 0.621371}
-    time_table = {"ms": 1/(3.6 * 10**6), "s": 1/3600,
-                  "min": 1/60, "hr": 1, "day": 24}
+    dist_table = {
+        "km": 1,
+        'm': 1000,
+        "ft": 3280.84,
+        "yrd": 1093.61,
+        "mile": 0.621371
+    }
+    time_table = {
+        "ms": 1/(3.6 * 10**6),
+        "s": 1/3600,
+        "min": 1/60,
+        "hr": 1,
+        "day": 24
+    }
 
     if speed < 0:
         raise ValueError('Speed cannot be negative')
