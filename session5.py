@@ -54,8 +54,7 @@ def polygon_area(len_side, sides):
 
 
 def temp_converter(val, temp_given_in):
-        temp_given_in = temp_given_in.upper()
-
+    temp_given_in = temp_given_in.upper()
     if temp_given_in not in set(['F', 'C', 'K']):
         raise ValueError('given unit is not in (f, c , k)')
 
